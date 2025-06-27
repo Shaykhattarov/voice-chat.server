@@ -41,7 +41,7 @@ class Settings(BaseSettings):
 
     BACKEND_CORS_ORIGIN: Annotated[List[AnyUrl], BeforeValidator(parse_cors)] = [
         "http://localhost",
-        "http://127.0.0.1"
+        "http://127.0.0.1",
     ]
 
     @computed_field
